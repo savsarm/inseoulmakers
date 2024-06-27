@@ -5,9 +5,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>인서울메이커스</title>
     <link href="https://hangeul.pstatic.net/hangeul_static/css/nanum-square.css" rel="stylesheet">
-    <style>
+        <style>
         body {
             font-family: 'NanumSquare', sans-serif;
+            margin: 0;
+            padding: 0;
         }
         .bold {
             font-family: 'NanumSquareBold', sans-serif;
@@ -29,6 +31,119 @@
         }
         .acr {
             font-family: 'NanumSquareAcr', sans-serif;
+        }
+        .Desktop1 {
+            width: 90%;
+            max-width: 908px;
+            padding: 5% 50px;
+            background: white;
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-start;
+            align-items: center;
+            gap: 35px;
+            margin: auto;
+        }
+        .Frame1, .Frame2, .Frame4, .Frame10, .Frame3 {
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+        .Frame1 {
+            padding: 0 5%;
+        }
+        .Frame2 {
+            padding: 0 5%;
+        }
+        .Frame4, .Frame10 {
+            padding: 30px 0;
+            gap: 30px;
+        }
+        .Frame4 .Group4, .Frame4 .Group5 {
+            width: 100%;
+            max-width: 307px;
+            position: relative;
+            text-align: center;
+        }
+        .Frame10 .Frame6, .Frame10 .Frame7 {
+            width: 100%;
+            max-width: 800px;
+            background: #F5F5F5;
+            box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+            border-radius: 20px;
+            padding: 20px;
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+            text-align: center;
+        }
+        .Frame3 {
+            padding: 20px;
+            gap: 30px;
+        }
+        .Frame8 {
+            display: flex;
+            justify-content: space-between;
+            gap: 20px;
+        }
+        .Group6, .Group7, .Group8 {
+            width: 100%;
+            max-width: 220px;
+            position: relative;
+            text-align: center;
+        }
+        .Group1, .Group2, .Group3 {
+            width: 100%;
+            height: 185px;
+            background: #F1F1F1;
+            box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+            border-radius: 50%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .Frame9 {
+            width: 100%;
+            max-width: 800px;
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+            text-align: center;
+        }
+
+        @media (max-width: 768px) {
+            .Desktop1 {
+                padding: 5%;
+            }
+            .Frame1, .Frame2 {
+                padding: 0;
+            }
+            .Frame4 {
+                flex-direction: column;
+                gap: 20px;
+            }
+            .Frame8 {
+                flex-direction: column;
+                gap: 20px;
+            }
+        }
+
+        @media (max-width: 480px) {
+            .Frame4, .Frame10, .Frame3 {
+                padding: 20px 0;
+                gap: 20px;
+            }
+            .Group6, .Group7, .Group8 {
+                max-width: 100%;
+            }
+            .Frame9 {
+                max-width: 100%;
+            }
+            .Frame6, .Frame7 {
+                padding: 10px;
+            }
         }
     </style>
 </head>
